@@ -11,9 +11,13 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 app.use(cors({
-  origin: 'https://habits-tracker-frontend-awzd7htk5-byrons-projects-a6702507.vercel.app/',
-  credentials : true
+  origin: 'https://habits-tracker-frontend-xi.vercel.app',
+  credentials: true
 }));
+
+
+
+
 
 // // view engine setup
 // app.set('views', path.join(__dirname, 'views'));
