@@ -11,7 +11,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://habits-tracker-frontend-awzd7htk5-byrons-projects-a6702507.vercel.app/',
   credentials : true
 }));
 
