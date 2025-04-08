@@ -4,6 +4,10 @@ const Habit = require("../models/Habit");
 const jwt = require("jsonwebtoken");
 const mongoose  = require('mongoose');
 
+router.get('/', function( req, res, next){
+  res.json({title: 'Express'});
+} );
+
 const authenticateToken = ( req, res, next ) => {
   const token = req.header('Authorization');
   if (!token) return res.status(401).send('Acceso denegado, no se proporcionó token');

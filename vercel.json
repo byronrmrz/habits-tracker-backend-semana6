@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app.js"
+    }
+  ],
+  "env": {
+    "MONGO_URI": "mongodb+srv://byronrmrz:E8J7j9FJHGgR6Xnq@cluster0.h6zie.mongodb.net/habitosApp?retryWrites=true&w=majority&appName=Cluster0",
+    "PORT": "3001",
+    "SECRET_KEY": "byrondecrypt",
+    "NODE_ENV": "development"
+  }
+}
